@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <div style={styles.nav}>
             <div style={styles.cartIconContainer}>
                 <img style={styles.cartIcon} src="https://cdn-icons-png.flaticon.com/512/1170/1170576.png" alt="" className="cart-icon" />
-                <span style={styles.cartCount}>5</span>
+                <span style={styles.cartCount}>{props.count}</span>
             </div>
         </div>
     )
@@ -21,7 +21,8 @@ const styles = {
         background: '#4267b2',
         display: 'flex',
         justifyContent: 'flex-end',
-        alignItems: 'center'
+        alignItems: 'center',
+        paddingRight: 30
     },
     cartIconContainer: {
         position: 'relative'
