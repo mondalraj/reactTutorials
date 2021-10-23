@@ -35,7 +35,7 @@ const CartItem = (props) => {
                     />
                     <img
                         className="action-icons"
-                        src="https://img-premium.flaticon.com/png/512/484/premium/484662.png?token=exp=1632209344~hmac=76906e5f838bbb7f2f770568b98f4620"
+                        src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-delete-multimedia-kiranshastry-solid-kiranshastry.png"
                         alt="delete"
                         onClick={() => onDeleteProduct(product.id)}
                     />
